@@ -16,7 +16,6 @@ body{
   grid-template-columns: 1fr;
   height: 500%;
   width: 100%;
-
 }
 /******** Zone_1 jo*********/
 .jo{
@@ -28,9 +27,7 @@ body{
   "logo header nav nav"
   "image1 image1 image1 image1"
   "text1 text1 text1 text1"
-
 }
-
 .header{
   /*
   grid-area: header;
@@ -40,7 +37,6 @@ body{
   width: 100%;
   */
 }
-
 .logo{
   grid-area: logo;
   position: fixed;
@@ -154,7 +150,6 @@ padding: 2%;
   border-top: 5px solid #79B02C;
   background-image: url(images/17.jpg);
   background-size: cover;
-
 }
 .bouton_projet{
   grid-area: bouton_projet;
@@ -170,16 +165,13 @@ padding: 2%;
   justify-content: center;
   margin-bottom: 3%;
   margin-top: 3%;
-
 }
 .images_projet img{
   max-width: 15%;
   height: auto;
   margin-left: 3%;
-
 }
 /**** zone_4 devis****/
-
 .devis{
   height: 100vh;
 }
@@ -220,41 +212,45 @@ padding: 2%;
   .container {
     border-radius: 5px;
     background-color: #f2f2f2;
-    padding: 20px;
-margin-bottom: 20px;
   }
-/***** zone_5 footer****/
-}
+/*****Zone3 footer***/
 .footer{
- background-color: black;
-  margin-top: 2px;
+ background-color: white;
   height: 100vh;
   display: grid;
-  grid-area: 5/1/6/2;
-  /*grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 2fr;
   grid-template-rows: 2fr 1fr 0.5fr;
   grid-template-areas:
-  ""*/
+  "imgfooter imgfooter"
+  "logo pieddepage"
+  "logo copyrigt"
 }
-footer{
-
+.footer{
   text-transform: uppercase;
   list-style-type: none;
   color: white;
+  background-color: #3C3C3C
 }
-footer img{
-width: 15%;
-height: 15%;
+#logo{
+  grid-area:logo;
+  max-width: 60%;
+  margin:auto;
+  height: auto;
 }
-footer p{
+.footer p{
   text-decoration: underline #3C3C3C;
 }
+.imgfooter{
+
+  grid-area: imgfooter;
+  background-image: url(images/15.jpg);
+  background-size: cover;
+}
 .pieddepage{
+  display: flex;
+  justify-content: space-around;
   grid-area: pieddepage;
   background-color: #79B02C;
-  display: flex;
-  justify-content: flex-end;
-
 }
 .contact img{
   width: 25px;
@@ -263,4 +259,7 @@ footer p{
 }
 .contact ul{
   list-style-type: none;
+}
+.copyrigt{
+  grid-area: copyrigt;
 }
